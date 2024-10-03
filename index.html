@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <section id="nav__bar">
+        <nav>
+            <div class="nav__container">
+                <img class="nav__image" src="apiassets/Movie Findr (2).png" alt="">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#">HOME</a></li>
+                    <li><a class="nav__link" href="#">BROWSE</a></li>
+                    <li><a class="nav__link" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="landing__page">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading">Find Movie!</h1>
+                <div class="search">
+                <input type="text" placeholder="Search Movie..." class="search-bar" onchange="onSearchChange(event)">
+                <button class="btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="movie">
+                    <h2 class="movie__title">Movie Title</h2>
+                    <img class="movie__poster" src="./apiassets/movie-night11.jpg" alt="">
+                    <p class="movie__rating">Rating</p>
+                    <p class="runtime">Runtime</p>
+                    <p class="plot">Plot</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
