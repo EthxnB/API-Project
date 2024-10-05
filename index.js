@@ -8,9 +8,9 @@ async function onSearchChange(event) {
 }
 
 async function renderMovies(getMovie) {
-    const movies = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=64801226=${getMovie}`)
+    const movies = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=64801226&s=${getMovie}`)
     const moviesData = await movies.json();
-    movieListEl.movieHTML = moviesData.Search.map((movie) => movieHTML(movie)).join('')
+    movieListEl.movieHTML = moviesData.Search.map(movie => movieHTML(movie)).join('')
 }
 
 function movieHTML(movie) {
