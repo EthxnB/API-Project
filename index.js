@@ -13,7 +13,7 @@ async function onSearchChange(event) {
 }
 
 async function renderMovies(getMovie) {
-    const movies = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=64801226&s=${getMovie}`);
+    const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=64801226&s=${getMovie}`);
     const moviesData = await movies.json();
     console.log(moviesData)
     if (moviesData.Search) {
